@@ -198,7 +198,7 @@ def image_predict():
 def start_conversation(user_input):
     try:
         # Configure GenerativeAI API key
-        genai.configure(api_key="AIzaSyB93JipcrqukQNeuB0-A0ZThU-haGxaWGs")
+        genai.configure(api_key="YOUR API HERE")
 
         # Set up the model configuration
         generation_config = {
