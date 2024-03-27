@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+}
+
+.chat-output {
+    min-height: 200px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.chat-output p {
+    margin: 5px 0;
+    color: rgba(0, 0, 0, 0.8); /* Text color */
+}
+
+#user-input {
+    width: calc(100% - 40px); /* Adjusted width to accommodate the arrow button */
+    padding: 8px;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+}
+
+button {
+    padding: 8px 15px;
+    background-color: rgba(0, 123, 255, 0.5); /* Transparent background with color */
+    color: rgba(255, 255, 255, 0.8); /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 86, 179, 0.7); /* Slightly darker on hover */
+}
+
+/* Style for the button symbol */
+.button-symbol::before {
+    content: "\2794"; /* Unicode character for right arrow */
+    font-size: 1.2em;
+    margin-right: 5px;
+}

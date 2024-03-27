@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiVision</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="static\script.js" defer></script>
+    <script src="static\Script2.js" defer></script>
+    <script src="static\Script3.js" defer></script>
+    <style>
+        /* Add this style to adjust margins and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            overflow: hidden; /* Hide overflow from animated background */
+        }
+
+        .header {
+            background-color: black;
+            width: 100%; /* Set header width to 100% */
+            height: 100px;
+            color: white;
+            padding: 10px; /* Add padding for the header */
+            display: flex;
+            justify-content: space-between; /* Align links and image */
+            align-items: center; /* Center items vertically */
+        }
+
+        .links {
+            /* Adjust width for the links */
+            width: auto; /* Set width to auto to let content determine width */
+            text-align: right;
+            margin-right: 50px; /* Align links to the right */
+        }
+
+        .links a {
+            color: white; /* Set link color to white */
+            text-decoration: none;
+            font-family: 'Roboto', serif; /* Set the font family */
+            font-size: 20px; /* Set the font size */
+            margin-left: 10px; /* Add margin between links */
+            display: inline-block; /* Ensure links stay on the same line */
+        }
+
+        .image-section {
+            position: relative;
+            display: inline-block;
+            margin-bottom: -20px; /* Remove the bottom margin */
+            z-index: 2; /* Place the image on top of the animation */
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buttons {
+            text-align: center; /* Align text to the center */
+            margin-bottom: 20px; /* Add margin below the text */
+        }
+
+        .buttons img {
+            display: block; /* Ensure the image behaves as a block element */
+            margin: 0 auto; /* Center the image horizontally */
+            width: 180px; 
+            height: auto;
+        }
+
+        .buttons h1 {
+            text-align: center; /* Center-align the heading */
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer img {
+            max-width: 200px;
+            height: auto;
+            margin-right: auto;
+        }
+
+        .footer-text {
+            margin-right: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+
+    <div class="container">
+        <!-- Header section -->
+        <div class="header">
+            <img src="static\images\O.png" alt="Header Image" style="width: 500px; height: auto;">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="https://github.com/blackmamba-ops/Emotion-Detection-Master.git">GitHub</a>
+                <a href="https://colab.research.google.com/github/blackmamba-ops/Emotion-Detection-Master/blob/main/model.ipynb">Run on Colab</a>
+                <a href="#" onclick="scrollToAboutUs()">About Us</a>
+                <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmail.google.com%2Fmail&ec=GAlAFw&hl=en&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-251099831%3A1710261480156923&theme=mn">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Image section -->
+        <div class="image-section">
+            <img src="static\images\Opti.gif" width="1600">
+            <div class="foreground-text">
+                <h2 style="text-align: left; font-family: 'MavenPro', sans-serif; font-size: 44px;"></h2>
+                <h3 style="text-align: left; font-family: 'MavenPro', sans-serif;"></h3>
+                <h3 style="text-align: left; font-family: 'MavenPro', sans-serif;"><a href="https://youtu.be/8-uPCmHX3U0" style="color: white; text-decoration: none;"></a></h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-text" id="about-us" style="color: black; margin-left: 20px; ">
+        <h1 style="text-align: left; margin-bottom: 20px; margin-top: 20px; font-size: 24px; font-family: 'MavenPro', sans-serif; ">OptiVision: Illuminating Insights</h1>
+        <h2 style="text-align: left; font-size: 18px; font-family: 'Kalam', sans-serif;">    
+            <!-- <img src="static/images/vegetables.gif" style="float: right; max-width: 400px; height: auto; margin-right: 2px;"> -->
+            OptiVision is your gateway to an immersive experience in computer vision technology. With cutting-edge emotion detection capabilities, it seamlessly interprets subtle facial cues, unlocking insights into inner feelings. Delve into the realm of video description creation, where OptiVision crafts compelling narratives from visual content with remarkable accuracy. Experience the power of lip reading as OptiVision deciphers spoken words, bridging communication barriers effortlessly.OptiVision goes beyond mere perception; it transforms the way you interact with visual data. Whether it's recognizing emotions, generating video descriptions, or providing chatbot assistance, OptiVision ensures seamless integration and unparalleled performance.
+
+            Step into the future with OptiVision and unlock a new dimension of perception. Experience the transformative potential of computer vision technology with OptiVision by your side.
+            <!-- <img src="static/images/Animation - 1710142634038.gif"> -->
+        </h2>
+    </div>
+    <div class="heading-container">
+        <h2 style="text-align: left; margin-left: 400px; margin-bottom: 1px;">Emotion Detection</h2>
+        <h2 style="text-align: right; margin-right: 420px; margin-bottom: 1px;">Video Captioniser</h2>
+    </div>
+    
+    
+    <div class="wrapper">
+        <!-- Emotion Detection Box -->
+        <div class="emotion-box">
+            <!-- Heading for Emotion Detection -->
+            <!-- <h2 style="text-align: center; margin-left: 60px;">Emotion Detection</h2> -->
+            
+            <!-- Description for Emotion Detection -->
+            <div class="content">
+                <h3>Real-time Emotion Detection</h3>
+                <p>Experience real-time emotion detection through webcam analysis. Our advanced system accurately identifies facial expressions as they happen, providing valuable insights into the emotional context of interactions.</p>
+            </div>
+            
+            <!-- Webcam Button for Emotion Detection -->
+            <div class="webcam-button-container">
+                <button id="start-webcam-button" class="webcam-button">Start Webcam</button>
+                <video id="webcam-video" style="display: none;"></video>
+            </div>
+            
+            <!-- Image Upload Form for Emotion Detection -->
+            <div class="image-upload-container">
+                <form id="emotion-image-upload-form" enctype="multipart/form-data">
+                    <input type="file" id="image-input" name="image" style="display: none;">
+                    <label for="image-input" class="custom-file-input">Choose File</label>
+                    <button type="button" id="predict-button" class="predict-button">Predict</button>
+                </form>
+                <p style="text-align: left;" id="selected-file" class="selected-file"></p>
+                <p style="text-align: left;" id="prediction-result" class="prediction-result"></p>
+            </div>
+            
+        </div>
+    
+        <!-- Image Captioning Box -->
+        <div class="captioning-box">
+            <!-- Heading for Image Captioning -->
+            <!-- <h2 style="text-align: center; margin-left: 60px;">Video Captioner</h2> -->
+            
+            <!-- Description for Image Captioning -->
+            <div class="content">
+                <h3>Real-time Video Captioning</h3>
+                <p>Effortlessly generate real-time descriptions of your surroundings with our webcam-enabled solution. From vividly detailing scenes to highlighting key moments, our technology enhances user experiences by providing instant captions that reflect the live environment.</p>
+            </div>
+            
+            <!-- Webcam Button for Image Captioning -->
+            <div class="webcam-button-container">
+                <button id="start-video-button" class="webcam-button">Start Webcam</button>
+                <video id="webcam-video" style="display: none;"></video>
+            </div>
+            
+            <!-- Image Upload Form for Image Captioning -->
+            <div class="image-upload-container">
+                <form id="captioning-image-upload-form" enctype="multipart/form-data">
+                    <input type="file" id="video-input" name="image" style="display: none;">
+                    <label for="video-input" class="custom-file-input">Choose File</label>
+                    <button type="button" id="video-predict-button" class="predict-button">Generate Caption</button>
+                </form>
+                <p style="text-align: left;" id="video-selected-file" class="selected-file"></p>
+                <p style="text-align: left;" id="video-caption-result" class="prediction-result"></p>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <div class="chat-container">
+        <div class="chat-output" id="chat-output"></div>
+        <div style="display: flex;">
+            <input type="text" id="user-input" placeholder="Enter your message...">
+            <button onclick="sendMessage()" class="button-symbol"></button>
+        </div>
+    </div>
+    
+                
+            
+        </div>
+    </div>
+                
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="display: flex; align-items: center; justify-content: center; background-color: black;">
+        <img src="static\images\O.png" alt="Footer Image" width="200" style="display: inline-block;">
+        <h3 style="display: inline-block; margin-left: 1px; color: white;">&copy; 2024 OptiVision All rights reserved.</h3>
+        <h3 style="display: inline-block; margin-left: 900px; color: white;">PCW7+4GV,
+            Christiansted,US Virgin Islands</h3>
+    </div>
+    
+    
+</body>
+</html>
+
+
+
